@@ -26,8 +26,10 @@ console.log(searchData) // paris sehri
 
  Promise.all([currentWeatherFetch, forecastFetch])
  .then(async (response) => {
+
    const weatherResponse = await response[0].json();
    const forcastResponse = await response[1].json();
+     console.log(weatherResponse)
 //fullinformation rapidapiden alınan sehrin bilgileriyle weatherapiden alınan weatherresponse datasını birleştirir.
 //amac sehir adı yok weatherresponse da sehrin adını eklemek en son olusacak dataya
    const fullinformation={city:searchData.label,...weatherResponse}

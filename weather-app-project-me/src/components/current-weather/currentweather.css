@@ -1,11 +1,11 @@
 .weather {
-    width: 300px;
-    border-radius: 6px;
+    width: 420px;
+    border-radius: 22px 22px;
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
-    color: yellow;
     background-color: purple;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
+    height:200px;
   }
   
   .top,
@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+
   }
   
   .city {
@@ -31,7 +33,9 @@
   }
   
   .weather-icon {
-    width:7rem;
+    border-radius: 12px 12px;
+    width:100px;
+    background:white;
   }
   
   .temperature {

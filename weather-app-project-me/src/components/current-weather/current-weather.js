@@ -1,7 +1,6 @@
 import matchers from "@testing-library/jest-dom/matchers";
 import React from "react";
 import "./currentweather.css";
-
 const CurrentWeather = ({ data }) => {
   //13 datayı al ve istedigin verileri erişerek ekrana yazdır.
   console.log(data);
@@ -17,7 +16,7 @@ const CurrentWeather = ({ data }) => {
             className="weather-icon"
             src={`icons/${data.weather[0].icon}.png`}
             alt="weather pic"
-            style={{ backgroundColor: "yellow" }}
+            
           />
         </div>
         <div className="bottom">
